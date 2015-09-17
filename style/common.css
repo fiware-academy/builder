@@ -1,0 +1,309 @@
+/*******************************************************************************
+ * Copyright (c) 2011, 2014 Engineering Group and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Engineering Group - Course Builder
+ *******************************************************************************/
+
+body {
+	margin: 10,10,10,10 px;
+	color: #737373;
+
+	margin-right:auto;
+	margin-left:auto;
+	width:85%;
+	min-width: 800px;
+	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+table, tr, td { font-size: 10px; padding: 2px;}
+
+A {
+	color: #737373;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+A:HOVER {
+	color: #737373;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+a.no_hover {
+	color: #FFFFFF;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.no_hover:HOVER {
+	font-size: 10px;
+}
+
+.headerTable {
+	background-color: #eeeeee;
+	font-weight: bold;
+	border: 1px solid #c0c0c0;
+	text-align: center;
+}
+
+.rowEven {
+	background-color: #ffffff;
+}
+.rowOdd {
+	background-color: #f9f9f9;
+}
+
+.box {
+	padding-left: 10px; 
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.contenitoreSmall{
+	border: 1px solid #50c6d4;
+	width: 300px;
+	padding: 2px;
+	margin-bottom: 8px
+}
+
+.contenitore{
+	border: 1px solid #50c6d4;
+	width: 99%;
+	padding: 2px;
+	margin-bottom: 8px
+	/*margin-right: 0px;*/
+}
+
+.titolo{
+	background-color: #50c6d4;
+	border-bottom: 1px solid #50c6d4;
+	border-top: 1px solid #50c6d4;
+	color: #ffffff;
+	font-weight: bold;
+	text-indent: 5px;
+}
+
+.link{
+	text-indent: 5px;
+	padding-top: 3px;
+}
+
+
+.input {	
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	font-size: 10px;
+	color: #737373;
+	font-style: normal;
+	font-family: verdana, helvetica, arial, sans-serif;
+	background-color: #f9f9f9;
+}
+
+.textarea {
+	width: 710px; 
+	height:100px;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	font-size: 10px;
+	color: #737373;
+	font-style: normal;
+	font-family: verdana, helvetica, arial, sans-serif;
+	background-color: #f9f9f9;
+}
+
+.error {
+   font-size: 10px;
+   color: #900;
+   background-color : #ffff00;
+}
+
+.submit {
+	border-top: 1px solid #737373;
+	border-bottom: 1px solid #737373;
+	border-left: 1px solid #737373;
+	border-right: 1px solid #737373;
+	background-color: #50c6d4;
+	color: #FFFFFF;
+	font-size: 9px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	width: auto;
+	height: 16px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	text-transform: uppercase; 
+}
+
+.back {
+	border-top: 1px solid #737373;
+	border-bottom: 1px solid #737373;
+	border-left: 1px solid #737373;
+	border-right: 1px solid #737373;
+	background-color: #50c6d4;
+	color: #FFFFFF;
+	font-size: 9px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	width: auto;
+	height: 16px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-transform: uppercase; 
+}
+
+.disabled{
+	background-color: #c0c0c0;
+	cursor: not-allowed;
+}
+
+.select {
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	font-size: 9px;
+	color: #737373;
+	font-style: normal;
+	font-weight: normal;
+	background-color: #f9f9f9;
+}
+
+.logo {
+	color: #c0c0c0;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+.header{
+	color: #50c6d4;
+	background-color: #FCFCFC;
+	/*text-shadow: 2px 2px 4px #c0c0c0;*/
+	text-align: center;
+	font-size: 35px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border: 1px solid #DDDDDD;
+	font-variant: small-caps;
+	-webkit-border-radius: 0px 15px 0px 15px;
+	-moz-border-radius: 0px 15px 0px 15px;
+	border-radius: 0px 15px 0px 15px;
+}
+
+.navigatore {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	background-color: #FCFCFC;
+	width: 100%;
+	border-bottom: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+}
+
+.footer {
+	padding-bottom: 25px;
+	padding-top: 2px;
+	width: 85%;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	background-color: #FFFFFF;
+	font-size: 9px; 
+	color: #c0c0c0;
+	border-top: 1px solid #DDDDDD;
+}
+
+.footerA{
+	font-weight: normal;
+	color: #c0c0c0;
+}
+
+.footerA:HOVER{
+	color: #c0c0c0;
+	text-decoration: underline;
+}
+
+.msg_notify{
+	font-weight: bold;
+	color: green;
+}
+
+.msg_alert{
+	font-weight: bold;
+	color: orange;
+}
+
+.msg_error{
+	font-weight: bold;
+	color: red;
+}
+
+.border{
+	border: 1px solid #DDDDDD;
+}
+
+.tableTop {
+	border: 0;
+	width: 100%;
+	border-collapse: separate; 
+	border-spacing: 5px;
+	padding: 1px;
+}
+
+.tableTdMenu {
+	vertical-align: top;
+	width: 195px;
+}
+
+.tableTdTop {
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.tableForm {
+	width: 100%;
+	border-collapse: separate; 
+	border-spacing: 4px;
+	padding: 2px;
+}
+	
+.tableList{
+	width: 100%;
+	border-collapse: separate; 
+	border-spacing: 1px;
+	padding: 0px;
+	background-color: #DEDEDE;	
+}	
+
+.tableCenter {
+	margin-left: auto;
+    margin-right: auto;
+} 
+
+.iframe {
+	height: 450px; 
+	border: 1px solid #ededed;
+}

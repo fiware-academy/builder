@@ -1,0 +1,20 @@
+
+*******************************************
+***   COURSE BUILDER - FIWARE ACADEM    ***
+*******************************************
+
+Here are listed the major changes, based on the previous version.
+
+---------------
+Version 0.2.0
+---------------
+- TTS (Text To Speech) feature to create AUDIO files by using the HTML text area
+- it's possible to add slides both uploading directly the MP3 file or using the TTS
+- permission (Read or ReadWrite) on courses to share courses with other users
+- login via fusion forge
+- the administrator can display all courses
+
+---------------
+Version 0.1.0
+---------------
+- First version of course builder

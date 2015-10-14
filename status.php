@@ -20,12 +20,13 @@ $status->httpd="ok";
 // check connection to database
 if(mysqli_ping($mysql)){
 	$status->db="ok";
+	// check connection for authentication
+	$status->auth="ok";
 }else{
 	$status->db="ko";
 }
-// check connection for authentication
-$status->auth="ok";
 
+// XML or JSON format
 if(isset($_GET['xml']) || 
 		isset($_POST['xml'])){
 	include ('config/memberObjectAndXML.php');
@@ -49,10 +50,12 @@ if(isset($_GET['xml']) ||
 	$objData1->records->person[1]->age = '25';
 	$objData1->records->person[1]->gender = 'Male';
 	*/
+	ob_clean();
 	header('Content-Type: application/xml');
 	echo $objAndXml->objToXML($newobj);
 	return;
 }
+ob_clean();
 header('Content-Type: application/json');
 echo json_encode($status);
 ?>

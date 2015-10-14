@@ -18,6 +18,7 @@
 	include_once 'config/functions.php';
 	
 	//object Member
+	//echo "include_once 'config/member'.$authenticationmethod.'.php';";
 	include_once 'config/member'.$authenticationmethod.'.php';
 	$memberclassname="Member$authenticationmethod";
 	$member = new $memberclassname($mysql);

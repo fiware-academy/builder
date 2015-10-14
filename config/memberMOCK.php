@@ -12,7 +12,7 @@
 <?php
 require_once "memberABSTRACT.php";
 
-class MemberDB extends MemberAbstract{
+class MemberMOCK extends MemberAbstract{
 		
 	public function __construct($connection){
 		parent::__construct($connection);
@@ -28,20 +28,19 @@ class MemberDB extends MemberAbstract{
 		if(!in_array($username,$avaibleusers)){
 			return false;
 		}
-		//2nd step - more info from local DB
-		$qry = "Select * from users where username='$username'";
-		$result = $this->_connection->query($qry);
+		if($username!="mockuser" || $password!='mockpassword'){
+			return false;
+		}
 		
 		
-		$row = $result->fetch_assoc();
-		$_SESSION['username'] = $row['username'];
-		$_SESSION['first_name']  = $row['first_name'];
-		$_SESSION['last_name']  = $row['last_name'];
-		$_SESSION['user_full_name'] = $row['first_name'] ." ".$row['last_name'];
-		$_SESSION['type']  = $row['type'];
-		$_SESSION['id_user'] = $row['id_user'];
-		$_SESSION['last_time_of_user'] = $row['last_time'];
-		$_SESSION['login_forge'] = $row['login_forge'];
+		$_SESSION['username'] = 'mockuser';
+		$_SESSION['first_name']  = 'Mock';
+		$_SESSION['last_name']  = 'User';
+		$_SESSION['user_full_name'] = "Mock User";
+		$_SESSION['type']  = 'user';
+		$_SESSION['id_user'] = 00;
+		$_SESSION['last_time_of_user'] = '';
+		$_SESSION['login_forge'] = '';
 		
 		$this->updateUserInfo($username);
 		return true;

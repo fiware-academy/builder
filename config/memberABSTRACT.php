@@ -18,7 +18,7 @@ abstract class MemberAbstract {
 	
 	private $_sessionvar = "user_logged";
 	
-	public function Member($connection){
+	public function __construct($connection){
 		$this->_connection = $connection;
 	}
 

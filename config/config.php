@@ -26,5 +26,6 @@ $pause = 2; //pause in seconds between two audio files
  * SEE: memberABSTRACT.php and other meber$authenticationmethod.php"
  * Now available are: DB FUSIONFORGE KEYROCK
  */
-$authenticationmethod="KEYROCKBEHINDENGPROXY";
+//$authenticationmethod="KEYROCKBEHINDENGPROXY";
+$authenticationmethod="FUSIONFORGE";
 ?>

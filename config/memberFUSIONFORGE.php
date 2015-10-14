@@ -41,7 +41,8 @@ class MemberFUSIONFORGE extends MemberAbstract{
 		}
 		//2nd step - more info from local DB
 		$qry = "Select * from users where username='$username'";
-		$result = $this->_connection->query($qry);
+		$conn = $this->GetConnection();
+		$result = $conn->query($qry);
 		
 		
 		$row = $result->fetch_assoc();

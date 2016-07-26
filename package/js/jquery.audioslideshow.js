@@ -20,6 +20,8 @@ permissions and limitations under the License.
 */
 
 (function( $ ) {
+	var currentslidemenucolor='#d5e2ed';
+	var slidemenucolor='#f2f2f2';
 	 
 	$.fn.audioSlideshow = function( options ) {
 			
@@ -206,11 +208,11 @@ permissions and limitations under the License.
 			    
 			    for(var i = 0; i < slidesCount; i++){
 				if (i == n){
-				    $("#menu_" + i).css('background-color', '#fff');
+				    $("#menu_" + i).css('background-color', currentslidemenucolor);
 				    var sHeight = parseInt($('#menu_'+ i).position().top) + $('#menu-slides').scrollTop() - parseInt($("#menu-slides").outerHeight())/2;
 				    $('#menu-slides').prop("scrollTop",sHeight);
 				}else{
-				    $("#menu_" + i).css('background-color', '#dedede');
+				    $("#menu_" + i).css('background-color', slidemenucolor);
 				}    
 			    }
 			}
